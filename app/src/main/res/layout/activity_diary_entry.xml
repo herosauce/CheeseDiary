@@ -1,0 +1,331 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.writeitdown.cheesediary.DiaryEntry">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="4dp"
+            android:textSize="12sp"
+            android:layout_marginStart="16dp"
+            android:background="#ffd4a8"
+            android:layout_marginTop="8dp"
+            android:text="Cheese Name"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:maxLines="1"
+            android:imeOptions="actionNext"
+            android:inputType="textCapWords"
+            android:id="@+id/et_name"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="4dp"
+            android:textSize="12sp"
+            android:layout_marginStart="16dp"
+            android:background="#ffd4a8"
+            android:layout_marginTop="8dp"
+            android:text="Cheese Type"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:maxLines="1"
+            android:imeOptions="actionNext"
+            android:inputType="textCapWords"
+            android:id="@+id/et_type"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="4dp"
+            android:textSize="12sp"
+            android:layout_marginStart="16dp"
+            android:background="#ffd4a8"
+            android:layout_marginTop="8dp"
+            android:text="Classification:"/>
+
+        <Spinner
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/spin_classification"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="4dp"
+            android:textSize="12sp"
+            android:layout_marginStart="16dp"
+            android:background="#ffd4a8"
+            android:layout_marginTop="8dp"
+            android:text="Country of Origin"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:maxLines="1"
+            android:imeOptions="actionNext"
+            android:inputType="textCapWords"
+            android:id="@+id/et_origin"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="4dp"
+            android:textSize="12sp"
+            android:layout_marginStart="16dp"
+            android:background="#ffd4a8"
+            android:layout_marginTop="8dp"
+            android:text="Price"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:maxLines="1"
+            android:imeOptions="actionNext"
+            android:inputType="numberDecimal"
+            android:id="@+id/et_price"/>
+<!--
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="4dp"
+            android:textSize="12sp"
+            android:layout_marginStart="16dp"
+            android:background="#ffd4a8"
+            android:layout_marginTop="8dp"
+            android:text="Place Bought"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:maxLines="1"
+            android:imeOptions="actionNext"
+            android:inputType="textCapWords"
+            android:id="@+id/et_purchased_loc"/>
+            -->
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="4dp"
+            android:textSize="12sp"
+            android:layout_marginStart="16dp"
+            android:background="#ffd4a8"
+            android:layout_marginTop="8dp"
+            android:text="Flavors"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:maxLines="1"
+            android:imeOptions="actionNext"
+            android:inputType="textCapWords"
+            android:id="@+id/et_flavors"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="4dp"
+            android:textSize="12sp"
+            android:layout_marginStart="16dp"
+            android:background="#ffd4a8"
+            android:layout_marginTop="8dp"
+            android:text="Texture"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:maxLines="1"
+            android:imeOptions="actionNext"
+            android:inputType="textCapWords"
+            android:id="@+id/et_texture"/>
+
+        <!--Food pairing
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="4dp"
+            android:textSize="12sp"
+            android:layout_marginStart="16dp"
+            android:background="#ffd4a8"
+            android:layout_marginTop="8dp"
+            android:text="I ate this with"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:maxLines="2"
+            android:imeOptions="actionNext"
+            android:inputType="textCapWords"
+            android:id="@+id/et_food"/>
+
+        Drink pairing
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="4dp"
+            android:textSize="12sp"
+            android:layout_marginStart="16dp"
+            android:background="#ffd4a8"
+            android:layout_marginTop="8dp"
+            android:text="I paired this beverage"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:maxLines="1"
+            android:imeOptions="actionNext"
+            android:inputType="textCapWords"
+            android:id="@+id/et_drink"/>
+
+
+        Location and date
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="4dp"
+            android:textSize="12sp"
+            android:layout_marginStart="16dp"
+            android:background="#ffd4a8"
+            android:layout_marginTop="8dp"
+            android:text="Place and date tasted"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:maxLines="2"
+            android:imeOptions="actionNext"
+            android:inputType="textCapWords"
+            android:id="@+id/et_location"/>
+            -->
+
+        <!--Rating-->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="4dp"
+            android:textSize="12sp"
+            android:layout_marginStart="16dp"
+            android:background="#ffd4a8"
+            android:layout_marginTop="8dp"
+            android:text="How much I liked it"/>
+
+        <RatingBar
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/rating"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_horizontal">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_weight="0.5">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginStart="16dp"
+                    android:text="@string/cheese_snapshot"/>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@android:color/darker_gray"
+                    android:layout_marginEnd="4dp"/>
+
+                <ImageButton
+                    android:layout_width="180dp"
+                    android:layout_height="120dp"
+                    android:src="@drawable/device_camera_icon"
+                    android:maxWidth="180dp"
+                    android:maxHeight="120dp"
+                    android:minWidth="180dp"
+                    android:minHeight="120dp"
+                    android:adjustViewBounds="true"
+                    android:scaleType="fitCenter"
+                    android:id="@+id/ib_cheese"
+                    android:contentDescription="@string/cheese_image" />
+            </LinearLayout>
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_weight="0.5">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginStart="16dp"
+                    android:text="Label Snapshot"/>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@android:color/darker_gray"
+                    android:layout_marginStart="4dp"/>
+
+                <ImageButton
+                    android:layout_width="180dp"
+                    android:layout_height="120dp"
+                    android:src="@drawable/device_camera_icon"
+                    android:maxWidth="180dp"
+                    android:maxHeight="120dp"
+                    android:minWidth="180dp"
+                    android:minHeight="120dp"
+                    android:adjustViewBounds="true"
+                    android:scaleType="fitCenter"
+                    android:id="@+id/ib_label"
+                    android:contentDescription="Label image" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/b_delete"
+                android:text="delete"
+                android:textAllCaps="false"
+                android:layout_weight="0.5"/>
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/b_save"
+                android:text="save"
+                android:textAllCaps="false"
+                android:layout_weight="0.5"
+                android:background="#f9aa20" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+</ScrollView>

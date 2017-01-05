@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">Cheese Diary</string>
+    <string name="action_settings">Settings</string>
+    <string name="quote_1">“People who know nothing about cheeses reel away from Camembert, Roquefort, and Stilton because the plebeian proboscis is not equiped to differentiate between the sordid and the sublime.”</string>
+    <string name="author_q1">-Harvey Day</string>
+    <string name="badge_icon">Badge Icon</string>
+    <string name="achievement_title">Achievement Title</string>
+    <string name="achievement_details">Details about this achievement</string>
+    <string name="cheese_snapshot">Cheese Snapshot</string>
+    <string name="cheese_image">Cheese image</string>
+    <string name="new_badge">You\'ve earned a new badge!</string>
+    <string name="globe_trotter">Globe Trotter</string>
+    <string name="adventurer">Adventurer</string>
+    <string name="perfect_pair">Perfect Pair</string>
+    <string name="loving_life">Loving Life</string>
+    <string name="connoisseur">Connoisseur</string>
+    <string name="gourmande">Gourmande achievement unlocked!</string>
+</resources>
